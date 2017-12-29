@@ -6,9 +6,7 @@
       {
         "extensions": [".js", ".ios.js", ".android.js"],
         "alias": {
-          "~/core": "autio/dist/core",
-          "~/infrastructure": "autio/dist/infrastructure",
-          "~/native": "autio/dist/native"
+          "~/core": "../dist/core"
         },
         "cwd": "babelrc"
       }
