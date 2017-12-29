@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+set -x
+docker exec -it -u postgres autio_postgres_1 psql autio

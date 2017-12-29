@@ -1,0 +1,17 @@
+{
+  "presets": ["babel-preset-react-native-stage-0/decorator-support"],
+  "plugins": ["transform-react-jsx-source",
+    [
+      "module-resolver",
+      {
+        "extensions": [".js", ".ios.js", ".android.js"],
+        "alias": {
+          "~/core": "autio/dist/core",
+          "~/infrastructure": "autio/dist/infrastructure",
+          "~/native": "autio/dist/native"
+        },
+        "cwd": "babelrc"
+      }
+    ]
+  ]
+}

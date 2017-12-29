@@ -1,0 +1,71 @@
+{
+  "name": "autio",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "tsc -w",
+    "api": "cd api && gulp",
+    "ios": "cd native && react-native run-ios",
+    "native": "cd native && node link-workspaces.js && yarn start -- --reset-cache",
+    "test:watch": "jest --watchAll --notify",
+    "test:coverage": "npm run test -- --coverage=true",
+    "sequelize": "./node_modules/.bin/sequelize --url postgres://$DB_USER:$DB_PASS@$DB_HOST/$DB_NAME --migrations-path infrastructure/db/migrations",
+    "db:migrate": "npm run sequelize -- db:migrate",
+    "db:seed": "npm run sequelize -- db:seed:all"
+  },
+  "author": "",
+  "license": "UNLICENCED",
+  "workspaces": [
+    "api",
+    "core",
+    "infrastructure",
+    "native",
+    "dist"
+  ],
+  "devDependencies": {
+    "@types/jest": "^21.1.8",
+    "jest": "^22.0.0",
+    "jest-junit-reporter": "^1.1.0",
+    "ts-jest": "^21.2.4",
+    "typescript": "^2.6.2"
+  },
+  "jest": {
+    "rootDir": ".",
+    "modulePaths": [
+      "<rootDir>"
+    ],
+    "moduleNameMapper": {
+      "~(.*)$": "<rootDir>/$1"
+    },
+    "testEnvironment": "node",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "json",
+      "node"
+    ],
+    "transform": {
+      ".(ts|tsx)": "./node_modules/ts-jest/preprocessor.js"
+    },
+    "transformIgnorePatterns": [
+      "./node_modules/(?!sequelize-typescript)"
+    ],
+    "testMatch": [
+      "**/__tests__/*.(ts|tsx)"
+    ],
+    "testResultsProcessor": "./node_modules/jest-junit-reporter",
+    "collectCoverageFrom": [
+      "<rootDir>/**/*.{ts,tsx,js}"
+    ],
+    "coverageDirectory": "./coverage",
+    "coverageReporters": [
+      "json",
+      "lcov",
+      "text",
+      "cobertura"
+    ]
+  }
+}

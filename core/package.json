@@ -1,0 +1,14 @@
+{
+  "name": "core",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "",
+  "license": "UNLICENCED",
+  "dependencies": {
+    "joi": "^11.0.3"
+  },
+  "devDependencies": {
+    "@types/joi": "^10.4.3"
+  }
+}

@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+set -x
+docker-compose -p autio run --rm api npm run sequelize -- migration:create --name $1
+STATUS=$?
+
+exit $STATUS

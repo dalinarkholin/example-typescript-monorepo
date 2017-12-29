@@ -1,0 +1,25 @@
+{
+  "name": "native",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "clear": "rm -rf $TMPDIR/react-native-packager-cache-* && rm -rf $TMPDIR/metro-bundler-cache-*"
+  },
+  "dependencies": {
+    "react": "16.0.0",
+    "react-native": "0.50.3"
+  },
+  "devDependencies": {
+    "@types/react": "^16.0.28",
+    "@types/react-native": "^0.51.0",
+    "babel-plugin-module-resolver": "^3.0.0",
+    "babel-preset-react-native-stage-0": "^1.0.1",
+    "concurrently": "^3.5.1",
+    "crna-make-symlinks-for-yarn-workspaces": "^1.0.0",
+    "metro-bundler-config-yarn-workspaces": "^1.0.0",
+    "react-test-renderer": "16.0.0"
+  }
+}

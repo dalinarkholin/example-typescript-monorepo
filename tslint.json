@@ -1,0 +1,15 @@
+{
+  "extends": "tslint:recommended",
+  "rules": {
+    "curly": true,
+    "no-empty-interface": false,
+    "object-literal-sort-keys": false,
+    "await-promise": true,
+    "no-unused-variable": true
+  },
+  "jsRules": {
+    "curly": true
+  },
+  "rulesDirectory": [
+  ]
+}

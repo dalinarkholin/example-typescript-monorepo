@@ -1,0 +1,14 @@
+{
+  "name": "infrastructure",
+  "version": "0.0.1",
+  "dependencies": {
+    "pg": "^7.4.0",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^4.28.1",
+    "sequelize-typescript": "^0.6.1"
+  },
+  "devDependencies": {
+    "@types/sequelize": "^4.0.73",
+    "sequelize-cli": "^3.2.0"
+  }
+}
