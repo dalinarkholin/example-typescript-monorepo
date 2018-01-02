@@ -10,6 +10,7 @@ The purpose of this repository is to provide a clear and concise Typescript arch
 
 ## Running React Native IOS
 
+- run `yarn run watch` (unless it's already running)
 - In a new terminal run `yarn run native:start`
 - In a new terminal run `yarn run native:ios`
 
