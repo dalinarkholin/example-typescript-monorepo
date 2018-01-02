@@ -17,9 +17,7 @@
     "@types/react-native": "^0.51.0",
     "babel-plugin-module-resolver": "^3.0.0",
     "babel-preset-react-native-stage-0": "^1.0.1",
-    "concurrently": "^3.5.1",
-    "crna-make-symlinks-for-yarn-workspaces": "^1.0.0",
-    "metro-bundler-config-yarn-workspaces": "^1.0.0",
+    "find-root": "^1.1.0",
     "react-test-renderer": "16.0.0"
   }
 }

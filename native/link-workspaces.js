@@ -1,1 +1,1 @@
-require('crna-make-symlinks-for-yarn-workspaces')(__dirname)
+require('./link-script')(__dirname)

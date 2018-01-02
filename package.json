@@ -1,26 +1,24 @@
 {
-  "name": "autio",
+  "name": "arc",
   "private": true,
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "watch": "tsc -w",
-    "api": "cd api && gulp",
-    "ios": "cd native && react-native run-ios",
-    "native": "cd native && node link-workspaces.js && yarn start -- --reset-cache",
+    "native:start": "cd native && node link-workspaces.js && node node_modules/react-native/local-cli/cli.js start --config ../../../../native/rn-cli-config.js --reset-cache",
+    "native:ios": "cd native && react-native run-ios",
+    "native:android": "cd native && react-native run-android",
+    "reset:modules": "rm -rf node_modules api/node_modules infrastructure/node_modules core/node_modules native/node_modules && yarn",
     "test:watch": "jest --watchAll --notify",
-    "test:coverage": "npm run test -- --coverage=true",
-    "sequelize": "./node_modules/.bin/sequelize --url postgres://$DB_USER:$DB_PASS@$DB_HOST/$DB_NAME --migrations-path infrastructure/db/migrations",
-    "db:migrate": "npm run sequelize -- db:migrate",
-    "db:seed": "npm run sequelize -- db:seed:all"
+    "test:coverage": "npm run test -- --coverage=true"
   },
   "author": "",
   "license": "UNLICENCED",
   "workspaces": [
     "core",
     "native",
-    "dist"
+    "infrastructure"
   ],
   "devDependencies": {
     "@types/jest": "^21.1.8",
@@ -48,9 +46,6 @@
     "transform": {
       ".(ts|tsx)": "./node_modules/ts-jest/preprocessor.js"
     },
-    "transformIgnorePatterns": [
-      "./node_modules/(?!sequelize-typescript)"
-    ],
     "testMatch": [
       "**/__tests__/*.(ts|tsx)"
     ],

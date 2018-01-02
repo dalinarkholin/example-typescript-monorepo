@@ -1,13 +1,16 @@
 import * as React from "react";
 import { Text, View, StyleSheet } from "react-native";
-import test from "~/core";
-alert(test);
+
+import core from "~/core";
+import infrastructure from "~/infrastructure";
 
 class App extends React.Component {
   render() {
     return (
       <View style={theme.container}>
-        <Text>Hello World!</Text>
+        <Text>Hello Native World!</Text>
+        <Text>{core}</Text>
+        <Text>{infrastructure}</Text>
       </View>
     );
   }

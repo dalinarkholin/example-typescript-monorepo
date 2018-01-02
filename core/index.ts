@@ -1,3 +1,3 @@
-var core = "HELLO CORE WORLD";
+const core = "Hello Core World!";
 
 export default core;
