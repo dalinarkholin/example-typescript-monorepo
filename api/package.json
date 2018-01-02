@@ -1,0 +1,27 @@
+{
+  "name": "api",
+  "version": "0.0.1",
+  "description": "API for Monorepo",
+  "main": "index.js",
+  "scripts": {
+    "api": "gulp"
+  },
+  "license": "UNLICENCED",
+  "devDependencies": {
+    "@types/body-parser": "^1.16.8",
+    "@types/express": "^4.0.39",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-batch": "^1.0.5",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-typescript": "^3.2.3",
+    "gulp-watch": "^4.3.11",
+    "typescript": "^2.6.2"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "module-alias": "^2.0.3",
+    "reflect-metadata": "^0.1.10"
+  }
+}
