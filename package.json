@@ -16,7 +16,7 @@
     "test:coverage": "npm run test -- --coverage=true"
   },
   "author": "",
-  "license": "UNLICENCED",
+  "license": "MIT",
   "workspaces": [
     "core",
     "native",
