@@ -20,6 +20,7 @@
     "module": "commonjs",
     "jsx": "react",
     "lib": [
+      "DOM",
       "ESnext"
     ],
     "baseUrl": ".",
@@ -31,6 +32,7 @@
   },
   "exclude": [
     "node_modules",
-    "dist"
+    "dist",
+    "web/webpack.config.ts"
   ]
 } 

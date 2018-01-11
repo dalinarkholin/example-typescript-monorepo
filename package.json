@@ -10,7 +10,8 @@
     "native:ios": "cd native && react-native run-ios",
     "native:android": "cd native && react-native run-android",
     "api:start": "cd api && gulp",
-    "reset:modules": "rm -rf node_modules api/node_modules infrastructure/node_modules core/node_modules native/node_modules && yarn",
+    "web:start": "cd web && NODE_ENV=development && webpack-dev-server",
+    "reset:modules": "rm -rf node_modules api/node_modules infrastructure/node_modules core/node_modules native/node_modules web/node_modules && yarn",
     "test:watch": "jest --watchAll --notify",
     "test:coverage": "npm run test -- --coverage=true"
   },
@@ -20,7 +21,8 @@
     "core",
     "native",
     "infrastructure",
-    "api"
+    "api",
+    "web"
   ],
   "devDependencies": {
     "@types/jest": "^21.1.8",
