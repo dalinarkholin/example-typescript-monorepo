@@ -22,5 +22,4 @@ The purpose of this repository is to provide a clear and concise Typescript arch
 ## Todo:
 
 - React Native Android.
-- Web
 - Add Testing
