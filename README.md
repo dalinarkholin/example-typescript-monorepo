@@ -8,16 +8,18 @@ The purpose of this repository is to provide a clear and concise Typescript arch
 - Run `yarn`
 - Run `yarn run watch` (builds the javascript from typescript)
 
-## Running React Native IOS
+You will need to run this before running the below commands for the seperate projects.
 
-- run `yarn run watch` (unless it's already running)
+## React Native IOS
+
 - In a new terminal run `yarn run native:start`
 - In a new terminal run `yarn run native:ios`
 
-## Running API
-
-- run `yarn run watch` (unless it's already running)
+## API
 - run `yarn run api:start`
+
+## Web
+-run `yarn run web:start`
 
 ## Todo:
 
