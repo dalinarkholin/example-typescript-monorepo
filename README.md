@@ -19,7 +19,7 @@ You will need to run this before running the below commands for the seperate pro
 - run `yarn run api:start`
 
 ## Web
--run `yarn run web:start`
+- run `yarn run web:start`
 
 ## Todo:
 
