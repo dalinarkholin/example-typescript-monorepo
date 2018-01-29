@@ -5,12 +5,12 @@ import infrastructure from "~/infrastructure";
 
 const helloWorldController = express.Router();
 
-helloWorldController.get('/core', (req: any, res: any) => {
-  //Talk to a service that talks to a db
+helloWorldController.get("/core", (req: any, res: any) => {
+  // Talk to a service that talks to a db
   res.json(core);
 });
-helloWorldController.get('/infrastructure', (req: any, res: any) => {
-  //Talk to a service that talks to a db,
+helloWorldController.get("/infrastructure", (req: any, res: any) => {
+  // Talk to a service that talks to a db,
   res.json(infrastructure);
 });
 
