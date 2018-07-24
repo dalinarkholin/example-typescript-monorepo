@@ -6,24 +6,22 @@
   "main": "index.js",
   "scripts": {
     "watch": "tsc -w",
-    "native:start": "cd native && node link-workspaces.js && node node_modules/react-native/local-cli/cli.js start --config ../../../../native/rn-cli-config.js --reset-cache",
-    "native:ios": "cd native && react-native run-ios",
-    "native:android": "cd native && react-native run-android",
-    "api:start": "cd api && gulp",
-    "web:start": "cd web && NODE_ENV=development && webpack-dev-server",
-    "reset:modules": "rm -rf node_modules api/node_modules infrastructure/node_modules core/node_modules native/node_modules web/node_modules && yarn",
+    "native:start": "cd packages/native && node link-workspaces.js && node node_modules/react-native/local-cli/cli.js start --config ../../../../packages/native/rn-cli-config.js --reset-cache",
+    "native:ios": "cd packages/native && react-native run-ios",
+    "native:android": "cd packages/native && react-native run-android",
+    "api:start": "cd packages/api && gulp",
+    "web:start": "cd packages/web && NODE_ENV=development && webpack-dev-server",
+    "packages:clean": "find . -name 'node_modules' -type d -prune -exec rm -rf '{}' +",
     "test:watch": "jest --watchAll --notify",
     "test:coverage": "npm run test -- --coverage=true"
   },
   "author": "",
   "license": "MIT",
-  "workspaces": [
-    "core",
-    "native",
-    "infrastructure",
-    "api",
-    "web"
-  ],
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
   "devDependencies": {
     "@types/jest": "^21.1.8",
     "jest": "^22.0.0",

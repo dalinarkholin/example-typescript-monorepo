@@ -27,7 +27,7 @@
     "outDir": "dist",
     "rootDir": ".",
     "paths": {
-      "~/*": ["*"]
+      "~/*": ["packages/*"]
     }
   },
   "exclude": [
