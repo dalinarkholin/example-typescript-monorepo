@@ -6,7 +6,7 @@ var config = {
             path.resolve(__dirname),
 
             // Include arc/root directory as a new root.
-            path.resolve(__dirname, "..")
+            path.resolve(__dirname, "../..")
         ];
     }
 }

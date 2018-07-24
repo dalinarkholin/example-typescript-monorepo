@@ -6,9 +6,9 @@
         ["module-resolver", {
             "root": ["."],
             "alias": {
-              "~/core": "../dist/core",
-              "~/infrastructure": "../dist/infrastructure",
-              "~/native": "../dist/native"
+              "~/core": "../../dist/packages/core",
+              "~/infrastructure": "../../dist/packages/infrastructure",
+              "~/native": "../../dist/packages/native"
             }
           }
         ]

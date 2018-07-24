@@ -1,3 +1,3 @@
-rootProject.name = 'autio'
+rootProject.name = 'exampleTypescriptMono'
 
 include ':app'

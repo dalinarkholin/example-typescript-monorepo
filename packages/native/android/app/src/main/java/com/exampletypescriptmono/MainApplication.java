@@ -1,4 +1,4 @@
-package com.autio;
+package com.exampletypescriptmono;
 
 import android.app.Application;
 

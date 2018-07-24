@@ -1,4 +1,4 @@
-import App from '../dist/native/src';
+import App from '../dist/packages/native/src';
 import Expo from 'expo';
 import React from 'react';
 
