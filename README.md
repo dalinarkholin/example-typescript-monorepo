@@ -16,10 +16,10 @@ You will need to run this before running the below commands for the separate pro
 - In a new terminal run `yarn run native:ios`
 
 ## API
-- run `yarn run api:start`
+- run `yarn run api:start` (http://localhost:9229)
 
 ## Web
-- run `yarn run web:start`
+- run `yarn run web:start` (http://localhost:8080)
 
 ## Todo:
 

@@ -1,4 +1,4 @@
-require("module-alias").addAlias("~", __dirname + "/../../"); // tslint:disable-line no-var-requires
+require("module-alias").addAlias("~", __dirname + "/../../../packages/"); // tslint:disable-line no-var-requires
 
 import * as bodyParser from "body-parser";
 import * as express from "express";
