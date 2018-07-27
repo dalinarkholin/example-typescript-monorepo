@@ -93,7 +93,7 @@ if (process.env.NODE_ENV === "development") {
     hot: true,
     stats: "normal",
     host: process.env.HOST || "0.0.0.0",
-    port: process.env.PORT || 8080,
+    port: process.env.PORT ? parseInt(process.env.PORT, 10) : 8080,
     watchOptions: {
       poll: 1000,
     },

@@ -1,1 +1,1 @@
-require('./link-script')(__dirname)
+require('./link-script')(__dirname);
