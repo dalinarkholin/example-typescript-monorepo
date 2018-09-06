@@ -1,0 +1,18 @@
+{
+  "presets": ["babel-preset-react-native"],
+  "env": {
+    "development": {
+      "plugins": ["@babel/transform-react-jsx-source",
+        ["module-resolver", {
+            "root": ["."],
+            "alias": {
+              "~/core": "../../dist/packages/core",
+              "~/infrastructure": "../../dist/packages/infrastructure",
+              "~/native-two": "../../dist/packages/native-two"
+            }
+          }
+        ]
+      ]
+    }
+  }
+}
