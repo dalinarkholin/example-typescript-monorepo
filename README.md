@@ -1,3 +1,6 @@
+# Update 01/29/2020
+I would avoid using this project until it has been updated to use Yarn V2. For those wanting to use a typescript monorepo look into Yarn V2. It solves most of the problems this repo tries to solve.
+
 # Example Typescript Monorepo
 
 The purpose of this repository is to provide a clear and concise Typescript architecture based on [clean architecture](https://www.microsoft.com/net/download/thank-you/aspnet-ebook) principles.
